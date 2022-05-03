@@ -110,7 +110,7 @@ void WatchFaceTerminal::Refresh() {
   notificationState = notificatioManager.AreNewNotificationsAvailable();
   if (notificationState.IsUpdated()) {
     if (notificationState.Get()) {
-      lv_label_set_text_static(notificationIcon, "You have mail.");
+      lv_label_set_text_static(notificationIcon, "You have new mail.");
     } else {
       lv_label_set_text_static(notificationIcon, "");
     }
